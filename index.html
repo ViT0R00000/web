@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cramer 3x3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <header>
+        <div class="contenedor">
+            <img src="logo2.jpeg" alt="Imagen Animada" class="animacion" style="float: right; margin-left: 20px;">
+        </div>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Cramer para Sistemas 3x3</h1>
+        <form id="matrixForm">
+            <div class="matrix-inputs">
+                <input type="number" id="a11" placeholder="a11" required>
+                <input type="number" id="a12" placeholder="a12" required>
+                <input type="number" id="a13" placeholder="a13" required>
+                <input type="number" id="a21" placeholder="a21" required>
+                <input type="number" id="a22" placeholder="a22" required>
+                <input type="number" id="a23" placeholder="a23" required>
+                <input type="number" id="a31" placeholder="a31" required>
+                <input type="number" id="a32" placeholder="a32" required>
+                <input type="number" id="a33" placeholder="a33" required>
+            </div>
+            <div class="vector-inputs">
+                <input type="number" id="b1" placeholder="b1" required>
+                <input type="number" id="b2" placeholder="b2" required>
+                <input type="number" id="b3" placeholder="b3" required>
+            </div>
+            <button type="button" onclick="calculateCramer()">Calcular</button>
+        </form>
+        <div id="result"></div>
+        <div id="process"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
